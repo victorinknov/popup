@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.stand {
+    display: block;
+    position: absolute;
+    z-index: 998;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.media-stand {
+    display: block;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 2rem;
+}
+
+.home-image {
+    width:2000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    position: absolute;
+}
+
+.close-button {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    margin-top: 1rem;
+    margin-left: calc(90vw + 50px);
+}
+
+.close-button:hover {
+    transform:rotateZ(15deg)
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    position: relative;
+}
+
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: calc(100vh - 350px);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+    
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-icon  {
+    margin-top: calc((250px - 150px) / 2);
+    width: 150px;
+}
+
+.map-icon {
+    margin-top: calc((250px - 170px) / 2);
+    width: 150px;
+}
+
+.ticket-icon {
+    margin-top: calc((250px - 170px) / 2);
+    width: 150px;
+}
+
+.icon:hover {
+    transform: scale(1.0125);
+}
+
+.icon-text {
+    text-align: center;
+    font-family: Arial Black, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.active {
+    visibility: visible;
+}
+
+.inactive {
+    visibility: hidden;
+}

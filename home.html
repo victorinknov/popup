@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- When the page's body loads, it opens the stand -->
+
+<body onload="openStand()">
+
+    <!-- Entry face -->
+    <img src="img/home-image.jpg" alt="" class="home-image">
+
+    <!-- Popup media -->
+    <div class="stand" id="stand-media">
+
+        <!-- Close media button -->
+        <img src="img/close.png" id="close-media" alt="" class="close-button">
+
+        <!-- Image stand media -->
+        <div id="image-stand">
+            <img id="image-stand-media" alt="" class="media-stand">
+        </div>
+
+        <!-- Video stand media -->
+        <div id="video-stand">
+            <video class="media-stand" autoplay muted >
+                <source src="media/mcdonalds.webm" type="video/webm">
+            </video> 
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+    </nav>
+
+    <script src="js/default.js" defer></script>
+</body>
+
+</html>
